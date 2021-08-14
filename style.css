@@ -1,0 +1,75 @@
+*{
+  padding:0;
+  margin:0;
+  box-sizing:border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+.image{
+  background-image:url("https://cdn.pixabay.com/photo/2021/06/07/14/21/mountains-6318080_960_720.jpg");
+  background-size:cover;
+  background-repeat:no-repeat;
+  width:100%;
+  height:100vh;
+  background-attachment:fixed;
+  filter: brightness(80%);
+    background-position: center;
+}
+.text{
+  background:#DDDDDD;
+  padding:20px 30px;
+  margin: 30px;
+   line-height:40px; 
+}
+h1{
+  transform:translate(-50%,-50%);
+  top:50%;
+  left:50%;
+  position:absolute;
+  background:#fffacd;
+  font-size:4rem;
+  font-family: 'Roboto', sans-serif;
+  text-transform:uppercase;
+  
+}
+.image::after{
+  content:"";
+  background-image: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5));
+}
+.shape{
+  width:100%;
+  height:100vh;
+  background:#F0F0F0;
+}
+.box{
+  width:35%;
+  height:90vh;
+background:url("https://cdn.pixabay.com/photo/2020/07/06/01/33/forest-5375005_960_720.jpg");
+  background-size:cover;
+  
+  padding:30px 40px;
+position:relative;
+  top:30px;
+  left:50px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  
+}
+.another-box{
+   width:40%;
+  height:90vh;
+  background:red;
+  position:absolute;
+  padding:30px 40px;
+  
+}
+h1::before{
+  content:"";
+  border:2px solid black;
+  
+}
+h1::after{
+  content:"";
+  border:2px solid black;
+  transition: height 2s;
+}
